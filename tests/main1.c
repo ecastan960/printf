@@ -1,3 +1,4 @@
+#include "holberton.h"
 #include <stddef.h>
 #include <unistd.h>
 
@@ -10,6 +11,7 @@ int main() {
       write(1, &c[i], 1);
       i++;
     }
-        _printf("Esto es%i una prueba %s ",12345,"martes");
+        _printf("Es%cto es%i una prueba %s ",'D',12345,"martes");
+        
   return 0;
 }
