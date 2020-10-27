@@ -1,11 +1,11 @@
-./" This is the manpage of the function _printf 
+./" This is the manpage of the function _printf
 .TH _PRINTF 3 "Linux Programmer's Manual" "2020-10-27" "Version 1.0"
 
 .SH NAME
-_printf 
+_printf
 
 .SH SYNOPSIS
-#include "holberton.h" 
+#include "holberton.h"
 
 **_printf** (const char *format, ...);
 
