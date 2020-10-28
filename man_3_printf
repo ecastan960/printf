@@ -34,6 +34,8 @@ present; if the precision is not specified, or is greater than
 the size of the array, the array must contain a terminating
 null byte.
 
+.IP i
+
 .SH AUTHOR
 Esteban Castaño & Vanessa Garcia.
 
