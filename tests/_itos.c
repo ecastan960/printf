@@ -1,13 +1,10 @@
 #include "holberton.h"
-
 /**
  * _itos - function that converts a number to strings
- *
  * @a: input number
  * Description: return a string from a number
  * Return: str
  */
-
 char *_itos(int a)
 {
 	long int i, n = 1, b, s = 0, c, d;
