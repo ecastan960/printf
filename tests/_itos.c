@@ -8,8 +8,7 @@
  * Return: str
  */
 
-
-char *_itos(long int a)
+char *_itos(int a)
 {
 	long int i, n = 1, b, s = 0, c, d;
 	char *str;
