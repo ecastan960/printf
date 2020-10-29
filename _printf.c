@@ -22,28 +22,10 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			switch (format[i + 1])
-			{
-			case 'c':
-				_putchar((char) va_arg(print, int)), c++, i++;
-				break;
-			case 's':
-				putstring(va_arg(print, char *), &c, &i);
-				break;
-			case '%':
-				_putchar('%'), c++, i++;
-				break;
-			case 'i':
-				puts_integer(va_arg(print, int), &c, &i);
-				break;
-			case 'd':
-				puts_integer(va_arg(print, int), &c, &i);
-				break;
-			default:
-			_putchar('%'), c++;
-			break;
-			}
+			search_function(format[i + 1])(print);
+			i++;
 		}
+	/*necesito adicionar los contadores i, c cuando se ejecuten las funciones*/	
 	}
 	va_end(print);
 	return (c);
