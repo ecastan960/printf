@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i, c = 0;
+	int i, contador_general = 0;
 
 	va_list print;
 
@@ -18,15 +18,14 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			write(1, &format[i], 1);
-			c++;
+			contador_general++;
 		}
 		else
 		{
-			search_function(format[i + 1])(print);
+			contador_general = contador_general + search_function(format[i + 1])(print);
 			i++;
 		}
-	/*necesito adicionar los contadores i, c cuando se ejecuten las funciones*/	
 	}
 	va_end(print);
-	return (c);
+	return (contador_general);
 }

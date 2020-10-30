@@ -5,16 +5,15 @@
  * @c: count the string size
  * @i: moves the main string counter one position
  */
-void f_s(va_list arg_string)
+int f_s(va_list arg_string)
 {
-	int a;
+	int a, contador_fs = 0;
 	char *string;
 	string = va_arg(arg_string, char *);
 	
 	for (a = 0; string[a]; a++)
 	{
-		_putchar(string[a]);
-		//*c = *c + 1;
+		contador_fs = contador_fs + _putchar(string[a]);
 	}
-	//*i = *i + 1;*/
+return(contador_fs);	
 }

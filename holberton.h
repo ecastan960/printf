@@ -6,16 +6,16 @@
 typedef struct sp_format
 {
       char *sp_char;
-      void (*p_fun)(va_list);
+      int (*p_fun)(va_list);
 }sp_format;
 
-void (*search_function(char sf_char))(va_list arg_list);
+int (*search_function(char sf_char))(va_list arg_list);
 
 char *_itos(int a);
-void _putchar(char ch);
-void f_c(va_list arg_char);
-void f_s(va_list arg_string);
-void f_i(va_list arg_integer);
+int _putchar(char ch);
+int f_c(va_list arg_char);
+int f_s(va_list arg_string);
+int f_i(va_list arg_integer);
 
 int _printf(const char *format, ...);
 

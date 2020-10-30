@@ -5,7 +5,7 @@
  * @c: count the string size
  * @i: moves the main string counter one position
  */
-void f_i(va_list arg_integer)
+int f_i(va_list arg_integer)
 {
 	
 	int in = va_arg(arg_integer, int);

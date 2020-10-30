@@ -3,7 +3,7 @@
  * @brief 
  * 
  */
-void (*search_function(char sf_char))(va_list)
+int (*search_function(char sf_char))(va_list)
 {
         sp_format vsp_format[] = {
                 {"c", f_c},
@@ -19,5 +19,5 @@ void (*search_function(char sf_char))(va_list)
                         return(vsp_format[i_format].p_fun);
                 i_format++;
         }
-        return(NULL);
+        return(0);
 }
