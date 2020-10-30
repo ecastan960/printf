@@ -18,14 +18,14 @@ typedef struct sp_format
 } sp_format;
 
 /**
- * struct sformat - selects a valid format
+ * struct format - selects a valid format
  *
  * @c1: next char
  */
 typedef struct format
 {
-      char *c1;
-}sel_format;
+	char *c1;
+} sel_format;
 
 
 int (*search_function(char sf_char))(va_list arg_list);
