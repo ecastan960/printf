@@ -14,11 +14,12 @@ int *fop(char c)
 		{"c"},
 		{"s"},
 		{"i"},
+		{"d"},
 		{"%"},
 		{NULL}
 	};
 
-	while (i < 4)
+	while (i < 5)
 	{
 		if (*f[i].c1 == c)
 			return ((void *)1);
