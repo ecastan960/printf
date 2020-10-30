@@ -9,8 +9,10 @@
 int f_i(va_list arg_integer)
 {
 	int contador_fi = 0;
-	int in = va_arg(arg_integer, int);
-	char *p_string_itos = _itos(in);
+	int in = (int) va_arg(arg_integer, int);
+	char *p_string_itos;
+
+	p_string_itos = itos(in);
 	int a;
 
 	for (a = 0; p_string_itos[a]; a++)

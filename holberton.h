@@ -16,7 +16,6 @@ typedef struct sp_format
 	char *sp_char;
 	int (*p_fun)(va_list);
 } sp_format;
-
 /**
  * struct sformat - selects a valid format
  *
@@ -30,7 +29,7 @@ typedef struct format
 
 int (*search_function(char sf_char))(va_list arg_list);
 
-char *_itos(int a);
+char *itos(int a);
 int _putchar(char ch);
 int f_c(va_list arg_char);
 int f_s(va_list arg_string);

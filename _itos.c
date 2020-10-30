@@ -5,7 +5,7 @@
  * Description: return a string from a number
  * Return: str
  */
-char *_itos(int a)
+char *itos(int a)
 {
 	long int i, n = 1, b, s = 0, c, d;
 	char *str;
@@ -21,7 +21,7 @@ char *_itos(int a)
 	}
 	while (b >= 10)
 	{
-		if (b > 10)
+		if (b >= 10)
 		{
 			b = b / 10;
 		}
