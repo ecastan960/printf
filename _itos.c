@@ -13,15 +13,11 @@ char *_itos(int a)
 	b = a;
 	if (a < 0)
 	{
-		b = -b;
-		c = b;
-		s = 1;
-		d = 0;
+		b = -b, c = b, s = 1, d = 0;
 	}
 	else
 	{
-		c = b;
-		d = 1;
+		c = b, d = 1;
 	}
 	while (b >= 10)
 	{

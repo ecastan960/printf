@@ -1,13 +1,21 @@
 #ifndef _HOLBERTON_H
 #define _HOLBERTON_H
 #include <stdarg.h>
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
+/**
+ * struct sp_format - Struct to handle functions and format
+ *
+ * @sp_char: receive character
+ * @p_fun: The function associated
+ */
 typedef struct sp_format
 {
-      char *sp_char;
-      int (*p_fun)(va_list);
-}sp_format;
+	char *sp_char;
+	int (*p_fun)(va_list);
+} sp_format;
 
 int (*search_function(char sf_char))(va_list arg_list);
 
