@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i, c_g = 0;
+	int i, c_g = 0, d;
 	int *c;
 
 	va_list print;
@@ -24,7 +24,8 @@ int _printf(const char *format, ...)
 		else
 		{
 			c = fop(format[i + 1]);
-			if (*c == 1)
+			d = *c;
+			if (d == 1)
 				c_g = c_g + search_function(format[i + 1])(print);
 			i++;
 		}
