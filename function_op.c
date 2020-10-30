@@ -21,8 +21,8 @@ int *fop(char c)
 	while (i < 4)
 	{
 		if (*f[i].c1 == c)
-			return (1);
+			return (void *)1;
 		i++;
 	}
-	return (0);
+	return (void *)0;
 }
