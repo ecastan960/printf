@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i, contador_general = 0;
+	int i, c_g = 0, c = 0;
 
 	va_list print;
 
@@ -18,11 +18,13 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			write(1, &format[i], 1);
-			contador_general++;
+			c_g++;
 		}
 		else
 		{
-			contador_general = contador_general + search_function(format[i + 1])(print);
+			c = fop(format[i + 1]);
+			if (c == 1)
+				c_g = c_g + search_function(format[i + 1])(print);
 			i++;
 		}
 	}
