@@ -9,6 +9,7 @@ int (*search_function(char sf_char))(va_list)
                 {"c", f_c},
                 {"s", f_s},
                 {"i", f_i},
+                {"%", f_percentage},
                 {NULL, NULL}
         };
         int i_format = 0;

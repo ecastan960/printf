@@ -5,10 +5,9 @@
  * @c: char to print
  * Return: cero
  */
-/*void f_percentage(va_list arg_percentege)
+int f_percentage(__attribute__((unused)) va_list arg_percentege)
 {
-	printf("estoy dentro de f_percentage\n");
-	printf("________________________\n");
-	/*_putchar(arg_percentege);
-	return (0);
-}*/
+	int contador_p = 0;
+	contador_p = contador_p + _putchar('%');
+	return (contador_p);
+}

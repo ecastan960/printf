@@ -16,6 +16,7 @@ int _putchar(char ch);
 int f_c(va_list arg_char);
 int f_s(va_list arg_string);
 int f_i(va_list arg_integer);
+int f_percentage(va_list arg_percentege);
 
 int _printf(const char *format, ...);
 
