@@ -13,7 +13,8 @@ int _printf(const char *format, ...)
 	va_list print;
 
 	va_start(print, format);
-
+	if (format != NULL)
+	{
 	for (i = 0; format[i]; i++)
 	{
 		if (format[i] != '%')
@@ -31,4 +32,6 @@ int _printf(const char *format, ...)
 	}
 	va_end(print);
 	return (c_g);
+	}
+	return(0);
 }
