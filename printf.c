@@ -29,5 +29,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(print);
-	return (contador_general);
+	return (c_g);
 }
